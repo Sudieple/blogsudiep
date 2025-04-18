@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog Sứ Điệp</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+     <div class="logo">
+  <a href="index.html"  class="logo-link">
+    <img src="image/logo.png" alt="Logo Sứ Điệp" style="height:100px">
+  </a>
+</div>
+      <ul class="menu">
+        <li><a href="index.html">Trang chủ</a></li>
+        <li><a href="about.html">Giới thiệu</a></li>
+		     <li><a href="#">Podcast</a></li>
+		   <li><a href="index.html">Blog</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+<section class="hero-slider">
+  <div class="slides">
+    <img src="image/banner1.jpg" class="slide active" alt="Banner 1">
+    <img src="image/banner2.jpg" class="slide" alt="Banner 2">
+    <img src="image/banner3.jpg" class="slide" alt="Banner 3">
+  </div>
+  <div class="hero-text">
+    <h1>Chào mừng đến với blog của Sứ Điệp</h1>
+    <p>Chia sẻ hành trình cùng Chúa và những suy tư nhẹ nhàng.</p>
+  </div>
+</section>
+
+<section class="bai-viet">
+  <div class="the-bai-viet">
+    <a href="#">
+      <img src="image/pexels-rodolfoclix-1615776.jpg" alt="Chúa là ai?">
+      <h3>Chúa là ai?</h3>
+      <p>Khám phá về Đấng Tạo Hóa – Đấng yêu thương bạn vô điều kiện.</p>
+    </a>
+  </div>
+
+  <div class="the-bai-viet">
+    <a href="#">
+      <img src="image/pexels-pixabay-208315.jpg" alt="Vì sao cần tin Chúa?">
+      <h3>Vì sao cần tin Chúa?</h3>
+      <p>Niềm tin không phải là mù quáng, mà là tìm thấy sự sống thật.</p>
+    </a>
+  </div>
+
+  <div class="the-bai-viet">
+    <a href="#">
+      <img src="image/pexels-pixabay-372326.jpg" alt="Kinh Thánh là gì?">
+      <h3>Kinh Thánh là gì?</h3>
+      <p>Cuốn sách kỳ diệu thay đổi hàng triệu cuộc đời trên thế giới.</p>
+    </a>
+  </div>
+
+  <div class="the-bai-viet">
+    <a href="#">
+      <img src="image/pexels-caleboquendo-3229850.jpg" alt="Cầu nguyện là gì?">
+      <h3>Cầu nguyện là gì?</h3>
+      <p>Đơn giản là trò chuyện với Cha – Đấng hiểu bạn hơn ai hết.</p>
+    </a>
+  </div>
+
+  <div class="the-bai-viet">
+    <a href="#">
+      <img src="image/pexels-vafphotos-14553829.jpg" alt="Sự cứu rỗi">
+      <h3>Điều gì xảy ra sau khi chết?</h3>
+      <p>Hiểu về thiên đàng, địa ngục, và sự sống đời đời trong Chúa Giê-xu.</p>
+    </a>
+  </div>
+
+  <div class="the-bai-viet">
+    <a href="#">
+      <img src="image/tải xuống.jpeg" alt="Tin lành là gì?">
+      <h3>Tin Lành là gì?</h3>
+      <p>Tin Lành là tin vui: Chúa yêu bạn đến nỗi chịu chết thay cho bạn.</p>
+    </a>
+  </div>
+
+  <div class="the-bai-viet">
+    <a href="#">
+      <img src="../../../Downloads/Arena/pexels-pripicart-631987.jpg" alt="Bắt đầu theo Chúa">
+      <h3>Làm sao để bắt đầu theo Chúa?</h3>
+      <p>Bạn không một mình – hãy bắt đầu bước đi đầu tiên với Ngài.</p>
+    </a>
+  </div>
+	  <div class="the-bai-viet">
+    <a href="#">
+      <img src="image/pexels-rahulp9800-1083633.jpg" alt="Tình yêu của Đức Chúa Trời">
+      <h3>Tình yêu của Đức Chúa Trời</h3>
+      <p>Một tình yêu không điều kiện, vượt qua mọi sai lầm của bạn.</p>
+    </a>
+  </div>
+
+  <div class="the-bai-viet">
+    <a href="#">
+      <img src="image/pexels-vladbagacian-1209658.jpg" alt="Chúa Giê-xu là ai?">
+      <h3>Chúa Giê-xu là ai?</h3>
+      <p>Ngài là Con Đức Chúa Trời – Đấng đến thế gian để cứu bạn.</p>
+    </a>
+  </div>
+
+</section>
+
+    <section class="cta">
+      <a href="about.html" class="btn">Tìm hiểu thêm</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Blog của Sứ Điệp</p>
+  </footer>
+	<script>
+  let current = 0;
+  const slides = document.querySelectorAll('.slide');
+
+  setInterval(() => {
+    slides[current].classList.remove('active');
+    current = (current + 1) % slides.length;
+    slides[current].classList.add('active');
+  }, 4000); // 4 giây đổi ảnh
+</script>
+
+</body>
+</html>
